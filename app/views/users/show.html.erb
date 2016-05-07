@@ -5,6 +5,10 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        
+        <%= image_tag(@user.picture_url) if @user.picture.present? %>
+
+
       </h1>
     </section>
   </aside>
